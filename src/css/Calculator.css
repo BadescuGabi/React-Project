@@ -1,0 +1,21 @@
+label {
+    display: block;
+    box-shadow: 0.1em 0.1em 0.2em #888;
+    margin: 1em;
+    border-radius: 1ex;
+    padding: 1ex 1em;
+}
+input[type=number] {
+    text-align: right;
+    border: none;
+}
+input {
+    float: right;
+}
+span {
+    font-weight: bold;
+}
+
+.alert-info{
+    color: #FFB300;
+}

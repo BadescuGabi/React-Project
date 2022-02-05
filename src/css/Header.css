@@ -1,0 +1,21 @@
+.navbar-brand{
+
+    color: #000000;
+    font-weight:800;
+    font-size:x-large;
+}
+
+
+
+buton{
+    background-color: #2e3239;
+}
+
+header{
+    background-color: #A2B2EE!important;
+}
+
+#navLink:hover{
+    color: black;
+    font-weight: bolder;
+}
