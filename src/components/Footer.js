@@ -16,7 +16,7 @@ function Footer() {
             width: "100%",
             marginTop:"3.1%"
         }} className="text-center p-1" >
-            <p>©2022 Copyright</p>
+            <p id={"f"}>©2022 Copyright</p>
 
         </div>
     </footer>
