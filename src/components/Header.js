@@ -27,7 +27,6 @@ function Header() {
                             }}>You are logged with {auth.currentUser.email} </p>
                             <Link id="navLink" className="nav-item nav-link" to="/calculator">Calculator</Link>
                             <Link id="navLink" className="nav-item nav-link" to="/profile">Profile</Link>
-                            <Link id="navLink" className="nav-item nav-link" to="/userHistory">User History</Link>
                             <button
                                 style={{
                                     backgroundColor: "#2e3239"

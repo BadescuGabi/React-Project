@@ -28,7 +28,7 @@ export default function HomePage() {
                 snapshot.forEach((snap) => {
                     const userObject = snap.val();
                     i++;
-                    console.log(userObject["activity"]);
+                    console.log(userObject["goal"]);
                     setCountUsers(countUsers + i);
                     if(userObject["activity"]==="none"){
                         countNone1++;
@@ -44,19 +44,17 @@ export default function HomePage() {
                     }
                     if(userObject["activity"]==="heavy"){
                         countHeavy1++;
-
-                        console.log(countHeavy1);
                         setCountHeavy(countHeavy+countHeavy1);
                     }
-                    if(userObject["activity"]==="lose"){
+                    if(userObject["goal"]==="lose"){
                         countLose1++;
                         setCountLose(countLose+countLose1);
                     }
-                    if(userObject["activity"]==="maintain"){
-                        countNone1++;
+                    if(userObject["goal"]==="maintain"){
+                        countMaintain1++;
                         setCountMaintain(countMaintain+countMaintain1);
                     }
-                    if(userObject["activity"]==="gain"){
+                    if(userObject["goal"]==="gain"){
                         countGain1++;
                         setCountGain(countGain+countGain1);
                     }
@@ -84,9 +82,9 @@ export default function HomePage() {
                     <ul>{countModerate} have moderate activity</ul>
                     <ul>{countHeavy} have hard activity</ul>
               <p>And the following objectives:</p>
-                    <ul>{countLight} have loss weight objective</ul>
+                    <ul>{countLose} have loss weight objective</ul>
                     <ul>{countMaintain} have to keep their current weight </ul>
-                    <ul>{countHeavy} want to gain weight</ul>
+                    <ul>{countGain} want to gain weight</ul>
             </div>
             <Footer/>
         </div>

@@ -9,6 +9,7 @@
 
 buton{
     background-color: #2e3239;
+    z-index: 99;
 }
 
 header{
@@ -19,3 +20,8 @@ header{
     color: black;
     font-weight: bolder;
 }
+
+footer{
+    top:93.3%;
+}
+

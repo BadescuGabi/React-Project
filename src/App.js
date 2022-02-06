@@ -10,7 +10,7 @@ import Calculator from "./pages/Calculator";
 import EditProfile from "./pages/EditProfile";
 import {auth} from './services/firebase';
 import {render} from "react-dom";
-import UserHistory from "./pages/UserHistory";
+
 
 function PrivateRoute({component: Component, authenticated, ...rest}) {
 
@@ -59,7 +59,6 @@ function App() {
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <PrivateRoute path="/profile" authenticated={authenticated} component={Profile}/>
-                    <PrivateRoute path="/userHistory" authenticated={authenticated} component={UserHistory}/>
                     <PrivateRoute path="/calculator" authenticated={authenticated} component={Calculator}/>
                     <PrivateRoute path="/edit" authenticated={authenticated} component={EditProfile}/>
                     <PublicRoute path="/signup" authenticated={authenticated} component={Signup}/>

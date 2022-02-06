@@ -89,8 +89,7 @@ export default function SignUp() {
                     </div>
                     <button style={{
                         backgroundColor: "#26292B"
-                    }} type={"submit"} className="btn btn-primary rounded-pill px-5">Sign up
-                    </button>
+                    }} type={"submit"} className="btn btn-primary rounded-pill px-5">Sign Up</button>
                     <p>&nbsp;
 
                         Already have an account? <Link to="/login">Login</Link></p>

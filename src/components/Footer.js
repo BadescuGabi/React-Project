@@ -1,20 +1,19 @@
 import React from 'react';
+import "../css/Header.css"
 
 function Footer() {
   return (
 
-    <footer className="pt-5" style={{
+    <footer  style={{
        position: "absolute",
-        top: "80%",
         width: "100%",
 
     }}>
         <div style={{
             color: "white",
             backgroundColor:"#26292B",
-            position: "fixed",
+            position: "relative",
             width: "100%",
-            marginTop:"3.1%"
         }} className="text-center p-1" >
             <p id={"f"}>©2022 Copyright</p>
 
